@@ -7,8 +7,8 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/yourusername/dice-roll-app.git'
-            }
+                            git branch: 'main', url: 'https://github.com/jukkiss/TimerTest.git'
+                        }
         }
         stage('Build') {
             steps {
