@@ -5,10 +5,10 @@ pipeline {
         jdk 'JDK11'     // Ensure JDK is installed
     }
     stages {
-        stage('Checkout Code') {
+        stage('Checkout') {
             steps {
-                            git branch: 'main', url: 'https://github.com/jukkiss/TimerTest.git'
-                        }
+                git branch: 'main', url: 'https://github.com/jukkiss/TimerTest.git'
+            }
         }
         stage('Build') {
             steps {
